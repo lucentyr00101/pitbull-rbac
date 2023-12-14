@@ -1,0 +1,20 @@
+export default {
+  'messages.invalid-ip-address': 'Invalid IP Address is detected.',
+  'messages.invalid-domain-name': 'Invalid Domain Name.',
+  'messages.invalid-redirect-url': 'Invalid Redirect URL.',
+  'messages.maximum-ip': 'Maximum of 10 IP Addresses only.',
+  'messages.invalid-component-name': 'Invalid Component Name',
+  'messages.invalid-component-redirection': 'Invalid Component Redirection.',
+  'messages.invalid-sort': 'Invalid Sort',
+  'messages.invalid-page-url': 'Invalid Page URL',
+  'messages.invalid-button-access-code': 'Invalid Button Access Code',
+  'messages.invalid-uri': 'Invalid URI',
+  'messages.file-upload-help': 'Please upload png, jpg type pictures within 1MB.',
+  'messages.png-jpg-only': 'File Type should be .png or .jpg only.',
+  'something-went-wrong': 'Something went wrong.',
+  'messages.choose-icon': 'Choose Icon',
+  'messages.directory.confirm-delete': 'By deleting this Directory, any Menu, Submenu or Action under it will also be deleted. Do you want to proceed?',
+  'messages.menu.confirm-delete': 'By deleting this Menu, any Submenu or Action under it will also be deleted. Do you want to proceed?',
+  'messages.submenu.confirm-delete': 'By deleting this Submenu, any Action under it will also be deleted. Do you want to proceed?',
+  'messages.action.confirm-delete': 'Do you want to proceed on deleting this Action?'
+}

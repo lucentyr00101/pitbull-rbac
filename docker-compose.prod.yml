@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+  pitbull-console-prod_build:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: 'pitbull-console-prod_build'
+    volumes:
+      - pitbull-console-prod_dist:/code/dist
+
+  pitbull-console-prod_web:
+    image: nginx
+    ports:
+      - 8001:80
+    container_name: 'pitbull-console-prod_web'
+    restart: unless-stopped
+    volumes:
+      - pitbull-console-prod_dist:/usr/share/nginx/html:ro
+      - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf
+
+volumes:
+  pitbull-console-prod_dist:
